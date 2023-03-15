@@ -12,7 +12,7 @@ const UL = styled.ul`
     left:0;
     height: 100vh;
     width: 250px;
-    padding-top: 5.5rem;
+    padding-top: 7.5rem;
     transition: transform 0.3s ease-in-out;
     background-color:white;
    
@@ -20,7 +20,9 @@ const UL = styled.ul`
     li
     {
       padding:1.5rem;
-      
+      padding-left:5rem;
+      cursor:pointer;
+      color:black;
     }
     
 `;

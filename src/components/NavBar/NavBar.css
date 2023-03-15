@@ -2,11 +2,23 @@
 {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    color: white;
     background-color: transparent;
-    position: sticky;
-    z-index: 20;
+    position: fixed;
+    z-index: 21;
+    left: 8rem;
+    top: -5px;
+    padding: 10px;
+    width: 100vw;
+    border-bottom: 1px solid white;
+    
 }
+.active
+{
+    background-color: white;
+    color: black;
+}
+
 .logo > h1{
     top: -10px;
     position: relative;
@@ -14,9 +26,70 @@
 .nav-ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    
     flex-flow: row nowrap;
+    position: relative;
+    top: 1rem;
+    left: 52%;
 }
 .nav-ul > li{
     padding: 0 1rem 0 ;
+}
+nav > div
+{
+    position: relative;
+    top: 1rem;
+}
+.btn
+{
+    padding: 10px;
+    border-radius: 10px;
+    
+    background-color: transparent;
+    width:80px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+
+}
+.btn-inactive
+{
+    border: 1px solid white;
+    color: white;
+}
+.btn-acti🇻e {
+    color: black;
+    border: 1px solid black;
+}
+.categoryList
+{
+    display: flex;
+    
+    color: white;
+    background-color: transparent;
+    position: relative;
+    z-index: 21;
+    left: 8rem;
+
+    width: 100vw;
+    border-bottom: 1px solid white;
+    top: 10rem;
+    overflow: hidden;
+    
+}
+.category-ul
+{
+    list-style: none;
+    display: flex;
+    left: -35px;
+    
+    position: relative;
+   
+    
+    
+}
+.category-ul > li
+{
+  margin-right: 1.5rem;
+  cursor: pointer;
 }
