@@ -1,0 +1,22 @@
+.navbar
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: transparent;
+    position: sticky;
+    z-index: 20;
+}
+.logo > h1{
+    top: -10px;
+    position: relative;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+.nav-ul > li{
+    padding: 0 1rem 0 ;
+}
