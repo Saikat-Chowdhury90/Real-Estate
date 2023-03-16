@@ -1,13 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  
+} from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
+import RealEstate from './components/RealEstate/RealEstate';
 
 function App() {
   return (
     <div className="App">
-        <HomePage/>
+        {/* <Router>
+          
+        <Routes>
+          
+          <Route exact path="/" element={HomePage} />
+         
+          <Route path="/realestate" element={RealEstate} />
+            
+     
+        
+        </Routes>
+      </Router> */}
+      {/* <HomePage/> */}
+      <RealEstate/>      
     </div>
   );
 }

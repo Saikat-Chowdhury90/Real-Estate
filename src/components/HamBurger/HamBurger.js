@@ -7,7 +7,7 @@ const StyledBurger = styled.div`
 width: 2rem;
 height: 2rem;
 position: fixed;
-top: -1.5px;
+top: -0.5px;
 left: -4px;
 display: flex;
 justify-content: space-around;
@@ -19,6 +19,7 @@ div{
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
+  cursor:pointer;
   background-color: ${({burger}) => burger ? 'black' : 'white'} ;
   transform-origin:19.5px;
   &:nth-child(1) {

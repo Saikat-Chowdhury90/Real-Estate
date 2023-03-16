@@ -1,8 +1,8 @@
 import React,{useEffect, useState} from 'react'
 import HamBurger from '../HamBurger/HamBurger'
-import Button from '@mui/material/Button';
-import './NavBar.css'
+import './NavBar.css' 
 const NavBar = () => {
+ 
   const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
     console.log(window.scrollY)
@@ -19,6 +19,7 @@ const NavBar = () => {
   })
   return (
     <header>
+      
     <nav  className={navbar ? "navbar active" : "navbar"}>
        
         <div className="hamburger-menu">
@@ -26,14 +27,15 @@ const NavBar = () => {
         </div>
         
         <div className="logo">
-          <h1>Real Estate</h1>
+          <h1>Archon Estate</h1>
         </div>
         
         <ul className='nav-ul'>
+          <li><input className={navbar ? "search search-active" : "search"} type="search" name="search" id="search"  placeholder='Search'/></li>
           <li>Contact Us</li>
           <li>List With Us</li>
           <li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li>
-          {/* <li>Categories</li> */}
+        
         
         </ul>
      
