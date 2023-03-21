@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import HamBurger from '../HamBurger/HamBurger'
 import './NavBar.css' 
+import { Link } from 'react-router-dom'
 const NavBar = () => {
  
   const [navbar, setNavbar] = useState(false)
@@ -27,14 +28,14 @@ const NavBar = () => {
         </div>
         
         <div className="logo">
-          <h1>Archon Estate</h1>
+          <h1><Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Archon Estate</Link></h1>
         </div>
         
         <ul className='nav-ul'>
           <li><input className={navbar ? "search search-active" : "search"} type="search" name="search" id="search"  placeholder='Search'/></li>
           <li>Contact Us</li>
           <li>List With Us</li>
-          <li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li>
+          <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}><li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li></Link>
         
         
         </ul>
@@ -42,8 +43,8 @@ const NavBar = () => {
     </nav>
     <div className={navbar ? "categoryList active" : "categoryList"}>
       <ul className="category-ul">
-        <li>Real Estates</li>
-        <li>Cars</li>
+        <li><Link to="/real" style={{ color: 'inherit', textDecoration: 'inherit'}}>Real Estates</Link></li>
+        <li><Link to="/product" style={{ color: 'inherit', textDecoration: 'inherit'}}>Cars</Link></li>
         <li>Watches</li>
         <li>Yatchs</li>
         <li>Jets</li>

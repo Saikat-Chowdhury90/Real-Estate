@@ -22,6 +22,8 @@ div{
   cursor:pointer;
   background-color: ${({burger}) => burger ? 'black' : 'white'} ;
   transform-origin:19.5px;
+  position:relative;
+  top:-7px;
   &:nth-child(1) {
     transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     background-color: ${({ open }) => open ? 'black' : ''};

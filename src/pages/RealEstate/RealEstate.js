@@ -1,20 +1,19 @@
 import React from 'react'
 import Carousels from '../../components/Carousel/Carousels'
-import FeaturedCategoriesComponent from '../../components/FeaturedCategories/FeaturedCategories'
 import NavBar from '../../components/NavBar/NavBar'
-
 import NewTrending from '../../components/NewTrending/NewTrending'
-
-const HomePage = () => {
+import PopularSearch from '../../components/PopularSearches/PopularSearch'
+import './RealEstate.css'
+const RealEstate = () => {
   return (
-    <div className='HomePage'>
+    <div className='real-estate-container'> 
         <NavBar/>
         <Carousels/>
-        <FeaturedCategoriesComponent/>
+        <PopularSearch/>
         <NewTrending/>
         
     </div>
   )
 }
 
-export default HomePage
+export default RealEstate

@@ -17,7 +17,7 @@ const Footer = () => {
                   <h6>Terms</h6>
                 </div>
                 <div className='ulc'>
-                  <div className='ulcu'><h5>CATEGORIES</h5></div>
+                  <div className='ulcu'><h5>Categories</h5></div>
                   <h6>Real Estate</h6>
                   <h6>Car</h6>
                   <h6>Yatchs</h6>
@@ -26,12 +26,12 @@ const Footer = () => {
                   <h6>LifeStyle</h6>
                 </div>
                 <div className='ulc'>
-                  <div className='ulcu'><h5>CATALOG</h5></div>
+                  <div className='ulcu'><h5>Catalogue</h5></div>
                   <h6>All Brands</h6>
                   <h6>All Businesses</h6>
                 </div>
                 <div className='ulc'>
-                  <div className='ulcu'><h5>FOR BUSINESS</h5></div>
+                  <div className='ulcu'><h5>For Business</h5></div>
                   <h6>List With Us</h6>
                   <h6>Partner</h6>
                   <h6>Linking</h6>
@@ -39,9 +39,10 @@ const Footer = () => {
             </div>
             <div className='ur'>
             <div className='urc'>
-                <div className='urcu'><h5> Setting</h5></div>
+                <div className='urcu'><h5> Settings</h5></div>
                   <div className='urcc'> English </div>
-                  <div className='urcc'>Inr</div>
+                  <div className='urcc'>Indian rupee - INR</div>
+                  <div className='urcc'>Square Feet -ft2/Acr</div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewTrending.css";
-
+import { Link } from 'react-router-dom'
 const handleLeftClick = () => {
   const cardSlider = document.querySelector(".card-slider");
   const cardWidth = document.querySelector(".card").offsetWidth;
@@ -57,8 +57,9 @@ const NewTrending = () => {
       </div>
       <div className="card-slider-container">
         <div className="card-slider-wrapper">
+          
           <div className="card-slider">
-            <div className="card">
+          <Link to="/product_details" style={{ color: 'inherit', textDecoration: 'inherit'}}><div className="card">
               <div className="heart-icon">
                 <span>&#9825;</span>
               </div>
@@ -70,7 +71,7 @@ const NewTrending = () => {
                 <p>Price: 99,000 /-</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
-            </div>
+            </div></Link>
             <div className="card">
               <div className="heart-icon">
                 <span>&#9825;</span>

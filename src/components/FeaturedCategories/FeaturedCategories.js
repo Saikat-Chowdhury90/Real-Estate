@@ -1,6 +1,6 @@
 import React from "react";
 import "./FeaturedCategories.css";
-
+import { Link } from 'react-router-dom'
 const FeaturedCategoriesComponent = () => {
   return (
     <div className="featured-categories-section">
@@ -11,6 +11,7 @@ const FeaturedCategoriesComponent = () => {
         <div className="featured-categories-card-slider-wrapper">
           <div className="featured-categories-card-slider">
             <div className="featured-categoires--card">
+            <Link to="/real" style={{ color: 'inherit', textDecoration: 'inherit'}}>
               <img
                 src="https://static-x.jamesedition.com/assets/popular_categories/real_estate-7a4a7367b1d6b97d9d7dbdb8d57f85a51fa898a677e6089ba3655e288d22a6e5.jpg"
                 alt="product1"
@@ -19,6 +20,7 @@ const FeaturedCategoriesComponent = () => {
                 <p className="real-state--text">Real State</p>
                 <p className="real-state--listings"> 210,000 Listings</p>
               </div>
+              </Link>
             </div>
             <div className="featured-categoires--card">
               <img

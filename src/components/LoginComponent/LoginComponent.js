@@ -1,10 +1,10 @@
 import React from "react";
 import "./LoginCss.css";
-
+import { Link } from 'react-router-dom'
 function LoginComponent() {
   return (
     <div className="login-container">
-      <div className="close-btn">&times;</div>
+      <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}><div className="close-btn">&times;</div></Link>
       <h2>Login</h2>
       <button className="google-btn">Continue with Google</button>
       <button className="facebook-btn">Continue with Facebook</button>
