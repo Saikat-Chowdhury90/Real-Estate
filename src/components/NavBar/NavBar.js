@@ -1,9 +1,19 @@
 import React,{useEffect, useState} from 'react'
 import HamBurger from '../HamBurger/HamBurger'
 import './NavBar.css' 
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
+import { useDispatch , useSelector } from 'react-redux';
+import { logout , reset } from '../../features/authSlice';
 const NavBar = () => {
  
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const {user} = useSelector((state) => state.auth)
+  const onlogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/')
+  }
   const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
     console.log(window.scrollY)
@@ -35,7 +45,10 @@ const NavBar = () => {
           <li><input className={navbar ? "search search-active" : "search"} type="search" name="search" id="search"  placeholder='Search'/></li>
           <li>Contact Us</li>
           <li>List With Us</li>
-          <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}><li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li></Link>
+          {user ? (
+              <li onClick={onlogout}><input  className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="logout" /></li>
+          ):( <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}><li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li></Link>)}
+         
         
         
         </ul>

@@ -14,19 +14,20 @@
 }
 .shadow2
 {
-    position: absolute;
-    /* background-image: linear-gradient(black,white); */
-    opacity: 1;
-    top: 0rem;
+    
+    position: relative;
+    
+    
+   top: -18rem;
     z-index: 21;
     width: 50vw;
-    height: 520px;
+   
 }
 .carousel-btn2
 {
     position: relative;
     width: 12rem;
-    top: 80%;
+    top: 0;
     left: 7rem;
     border-radius: 20px;
     margin-right: 2rem;
