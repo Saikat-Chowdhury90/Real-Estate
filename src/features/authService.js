@@ -18,10 +18,15 @@ const register = async (userData) => {
 //login
 const login = async (userData) => {
     const response = await axios.post(API_URL + "login",userData)
-
-    if(response.data)
+    
+    if(response.status === 200 )
     {
         localStorage.setItem('user' , JSON.stringify(response.data))
+    }
+    else
+    {
+        window.alert("email or password is incorrect");
+        return 
     }
 
     return response.data
