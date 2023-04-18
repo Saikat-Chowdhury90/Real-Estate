@@ -31,7 +31,7 @@
     flex-flow: row nowrap;
     position: relative;
     top: 1rem;
-    left: 35%;
+    right: -47em;
 }
 .nav-ul > li{
     padding: 0 1rem 0 ;
@@ -107,4 +107,67 @@ nav > div
 .category-ul > li:hover
 {
     color: antiquewhite;
+}
+
+/* media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 25em) {
+    .categoryList{
+        display: none;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .navbar
+    {
+        border: none;
+        padding-bottom: 1.5rem;
+        
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 37.5em) {
+    .categoryList{
+        display: none;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .navbar
+    {
+        border: none;
+        padding-bottom: 1.5rem;
+        
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 56.25em) {
+    .categoryList{
+        display: none;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .navbar
+    {
+        border: none;
+        padding-bottom: 1.5rem;
+        
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 75em) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 112.5em) {
+
 }

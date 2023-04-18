@@ -35,3 +35,117 @@
     color: white;
     left: 2rem;
 }
+
+/* media query */
+
+
+@media only screen and (max-width: 25em) {
+    .shadow
+    {
+        height: 50.5rem;
+        
+    }
+    .shadow p{
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        text-overflow: ellipsis;
+    }
+    .shadow h1
+    {
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+    }
+    .cc
+    {
+        height: 57.5rem;
+        width: 100vw;
+        object-fit: contain;
+    }
+    
+    .low-bright{
+        height: 50.5rem;
+        width: 100vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 37.5em) {
+    .shadow
+    {
+        height: 50.5rem;
+        
+    }
+    .shadow p{
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        text-overflow: ellipsis;
+    }
+    .shadow h1
+    {
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+    }
+    .cc
+    {
+        height: 57.5rem;
+        width: 100vw;
+        object-fit: contain;
+    }
+    
+    .low-bright{
+        height: 50.5rem;
+        width: 100vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 56.25em) {
+    .shadow
+    {
+        height: 50.5rem;
+        
+    }
+    .shadow p{
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        text-overflow: ellipsis;
+    }
+    .shadow h1
+    {
+        top: 50%;
+        left: 0;
+        padding: 1rem;
+    }
+    .cc
+    {
+        height: 57.5rem;
+        width: 100vw;
+        object-fit: contain;
+    }
+    
+    .low-bright{
+        height: 50.5rem;
+        width: 100vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 75em) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 112.5em) {
+
+}

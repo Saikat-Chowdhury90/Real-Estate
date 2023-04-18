@@ -42,9 +42,8 @@ const NavBar = () => {
         </div>
         
         <ul className='nav-ul'>
-          <li><input className={navbar ? "search search-active" : "search"} type="search" name="search" id="search"  placeholder='Search'/></li>
+          {/* <li><input className={navbar ? "search search-active" : "search"} type="search" name="search" id="search"  placeholder='Search'/></li> */}
           <li>Contact Us</li>
-          <li>List With Us</li>
           {user ? (
               <li onClick={onlogout}><input  className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="logout" /></li>
           ):( <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}><li><input className={navbar ? "btn btn-active" : "btn btn-inactive"} type="button" value="Sign Up" /></li></Link>)}
@@ -64,9 +63,6 @@ const NavBar = () => {
         <li>Motorcycles</li>
         <li>Helicopters</li>
         <li>Jewelery</li>
-        <li>Collectibles</li>
-        <li>Rentals</li>
-        <li>Journal</li>
       </ul>
     </div>
     </header>
